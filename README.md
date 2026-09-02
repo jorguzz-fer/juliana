@@ -31,7 +31,10 @@ site/                      raiz pública
 ## Deploy no Coolify
 
 1. **New Resource → Application → Public/Private Repository**
-   Repositório: `jorguzz-fer/juliana`, branch `main`.
+   Repositório: `jorguzz-fer/juliana`, branch `claude/publish-maternidadesemculpa-m7vpc7`
+   (o repositório estava vazio, então essa é a branch padrão dele).
+   Se preferir `main`, renomeie em *Settings → General → Default branch* no
+   GitHub e use `main` aqui.
 2. **Build Pack:** `Dockerfile`
    Dockerfile Location: `/Dockerfile` · Base Directory: `/`
 3. **Port:** `80` (`Ports Exposes = 80`).
