@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mãe não vem com manual — mas se viesse? | Juliana Martins</title>
+<meta name="description" content="Um guia para mulheres que estão aprendendo a ser mães enquanto aprendem a não se perder de si mesmas. 10 capítulos curtos sobre o primeiro ano. Receba gratuitamente no WhatsApp.">
+<link rel="canonical" href="https://maternidadesemculpa.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maternidadesemculpa.com.br/">
+<meta property="og:site_name" content="Maternidade Sem Culpa">
+<meta property="og:title" content="Mãe não vem com manual — mas se viesse?">
+<meta property="og:description" content="Você não precisa saber tudo. Um guia para o primeiro ano, em 10 capítulos curtos.">
+<meta property="og:image" content="https://maternidadesemculpa.com.br/juliana-og.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mãe não vem com manual — mas se viesse?">
+<meta name="twitter:description" content="Você não precisa saber tudo. Um guia para o primeiro ano, em 10 capítulos curtos.">
+<meta name="twitter:image" content="https://maternidadesemculpa.com.br/juliana-og.webp">
+<meta name="theme-color" content="#372937">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#372937;
+  --noite-2:#4B3949;
+  --leite:#F1E4DB;
+  --leite-2:#D2CADF;
+  --ambar:#92333C;
+  --ambar-luz:#E1A49A;
+  --salvia:#92333C;
+  --tinta:#372937;
+  --bruma:#6A5560;
+  --bruma-noite:#BBA8AE;
+  --display:"Fraunces",Georgia,serif;
+  --corpo:"Karla",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  --wrap:min(1080px,100% - 40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--leite);color:var(--tinta);
+  font-family:var(--corpo);font-size:18px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:var(--wrap);margin-inline:auto}
+.narrow{max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ambar-luz);outline-offset:3px;border-radius:2px}
+
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-.015em;line-height:1.1;margin:0}
+h2{font-size:clamp(30px,5.2vw,46px)}
+p{margin:0 0 18px}
+
+.eyebrow{font-family:var(--corpo);font-size:14px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ambar-luz);margin:0 0 20px}
+
+/* ---------- botão ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:56px;padding:0 30px;border:none;border-radius:999px;cursor:pointer;
+  background:var(--ambar);color:var(--leite);
+  font-family:var(--corpo);font-size:18px;font-weight:600;text-decoration:none;
+  transition:transform .18s ease, box-shadow .18s ease;
+  box-shadow:0 6px 24px rgba(55,41,55,.30);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(55,41,55,.42)}
+.btn:disabled{opacity:.6;cursor:progress;transform:none}
+.hero .btn,.s-form .btn{background:var(--ambar-luz);color:var(--noite)}
+.btn-nota{font-size:15px;color:var(--bruma-noite);margin:14px 0 0}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;background:var(--noite);color:var(--leite);overflow:hidden;
+  padding:clamp(56px,10vw,104px) 0 clamp(72px,11vw,120px);
+}
+.hero::before{
+  content:"";position:absolute;top:-24%;right:-14%;width:min(760px,86vw);aspect-ratio:1;
+  background:radial-gradient(circle,rgba(225,164,154,.34) 0%,rgba(225,164,154,.12) 42%,transparent 68%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:clamp(40px,6vw,72px);
+  grid-template-columns:1fr;align-items:center}
+.hero h1{margin:0;display:flex;flex-direction:column;gap:4px}
+.h-tit{font-family:var(--display);font-weight:500;font-size:clamp(29px,5.9vw,50px);
+  line-height:1.04;letter-spacing:-.02em;color:var(--leite)}
+.h-perg{font-family:var(--display);font-style:italic;font-weight:400;
+  font-size:clamp(44px,10vw,92px);line-height:1;letter-spacing:-.03em;color:var(--ambar-luz)}
+.hero .sub{font-family:var(--display);font-size:clamp(21px,3.4vw,29px);line-height:1.32;
+  color:var(--leite);margin:22px 0 16px;max-width:20ch}
+.hero .apoio{color:var(--bruma-noite);font-size:19px;max-width:34ch;margin-bottom:34px}
+
+/* capa */
+.capa{width:min(330px,80vw);height:auto;display:block;border-radius:8px;
+  border:1px solid rgba(225,164,154,.30);box-shadow:0 34px 74px rgba(0,0,0,.52);
+  transform:rotate(-2.2deg)}
+/* figuras */
+.dentro-grid{display:grid;gap:clamp(36px,6vw,60px);grid-template-columns:1fr;align-items:start}
+.fig-perfil{margin:0}
+.fig-perfil img{width:100%;height:auto;display:block;border-radius:6px;
+  box-shadow:0 18px 44px rgba(55,41,55,.18)}
+.fig-perfil figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--bruma);margin-top:12px}
+.ph{position:relative}
+.ph::before{
+  content:attr(data-ph);position:absolute;z-index:3;top:-11px;left:12px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--ambar);color:var(--leite);padding:2px 7px;border-radius:3px;
+}
+.ph::after{content:"";position:absolute;inset:-8px;border:2px dashed rgba(146,51,60,.55);border-radius:8px;pointer-events:none}
+
+/* ---------- transição noite → amanhecer ---------- */
+.aurora{height:clamp(80px,12vw,140px);background:linear-gradient(180deg,var(--noite) 0%,#5C3243 28%,#92333C 48%,#C4787B 66%,#E1A49A 80%,var(--leite) 100%)}
+
+/* ---------- seções ---------- */
+section{padding:clamp(64px,9vw,110px) 0}
+.s-dor{background:var(--noite);color:var(--leite);padding-bottom:0}
+.s-dor h2{color:var(--leite);max-width:16ch;margin-bottom:52px}
+
+/* assinatura: régua da madrugada */
+.horas{list-style:none;padding:0;margin:0 0 clamp(56px,8vw,88px);max-width:44ch}
+.horas li{display:grid;grid-template-columns:76px 1fr;gap:20px;align-items:start;
+  padding:26px 0;border-top:1px solid rgba(225,164,154,.26)}
+.horas li:last-child{border-bottom:1px solid rgba(225,164,154,.26)}
+.horas time{font-family:var(--mono);font-size:14px;letter-spacing:.06em;color:var(--ambar-luz);padding-top:7px}
+.horas p{font-family:var(--display);font-size:clamp(20px,3.1vw,26px);line-height:1.38;margin:0;color:var(--leite)}
+.dor-fecho{max-width:38ch;color:var(--bruma-noite);font-size:19px;padding-bottom:clamp(56px,8vw,90px)}
+.dor-fecho strong{color:var(--ambar-luz);font-weight:500}
+
+/* ---------- capítulos ---------- */
+.caps{list-style:none;padding:0;margin:44px 0 0;
+  display:grid;gap:0;grid-template-columns:1fr;border-top:1px solid rgba(55,41,55,.18)}
+.caps li{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:baseline;
+  padding:20px 4px;border-bottom:1px solid rgba(55,41,55,.18)}
+.caps .n{font-family:var(--mono);font-size:13px;color:var(--salvia)}
+.caps .t{font-family:var(--display);font-size:clamp(19px,2.6vw,23px);line-height:1.3}
+.nota{font-size:16px;color:var(--bruma);margin-top:26px;max-width:52ch}
+
+/* ---------- autora ---------- */
+.s-autora{background:var(--leite-2)}
+.autora-grid{display:grid;gap:clamp(28px,5vw,56px);grid-template-columns:1fr;align-items:center}
+.retrato{width:min(300px,68vw);height:auto;display:block;border-radius:6px;
+  box-shadow:0 20px 48px rgba(55,41,55,.22)}
+.autora-txt p{font-size:19px;max-width:48ch}
+.credencial{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--salvia);margin-bottom:12px}
+
+/* ---------- depoimentos ---------- */
+.dep-grid{display:grid;gap:20px;grid-template-columns:1fr;margin-top:40px}
+.dep{background:#FAF2EC;border:1px solid rgba(55,41,55,.14);border-radius:10px;padding:26px}
+.dep p{font-family:var(--display);font-size:19px;line-height:1.45;margin:0 0 14px}
+.dep cite{font-style:normal;font-size:15px;color:var(--bruma)}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:64ch;margin-top:40px;border-top:1px solid rgba(55,41,55,.18)}
+details{border-bottom:1px solid rgba(55,41,55,.18)}
+summary{cursor:pointer;list-style:none;padding:22px 40px 22px 0;position:relative;
+  font-family:var(--display);font-size:20px;line-height:1.35;min-height:48px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:20px;font-size:26px;color:var(--salvia);
+  font-family:var(--corpo);transition:transform .2s ease}
+details[open] summary::after{transform:rotate(45deg)}
+details .resp{padding:0 0 24px;color:#4A3B45;max-width:56ch}
+
+/* ---------- formulário ---------- */
+.s-form{background:var(--noite);color:var(--leite);position:relative;overflow:hidden}
+.s-form::before{content:"";position:absolute;bottom:-40%;left:-10%;width:min(680px,80vw);aspect-ratio:1;
+  background:radial-gradient(circle,rgba(225,164,154,.30) 0%,transparent 66%);pointer-events:none}
+.s-form .wrap{position:relative;z-index:1}
+.form-grid{display:grid;gap:clamp(32px,5vw,64px);grid-template-columns:1fr;align-items:start}
+.s-form h2{color:var(--leite);max-width:15ch}
+.s-form .lede{color:var(--bruma-noite);font-size:19px;max-width:40ch;margin-top:20px}
+form{background:rgba(255,255,255,.045);border:1px solid rgba(225,164,154,.24);
+  border-radius:14px;padding:clamp(24px,4vw,34px)}
+.campo{margin-bottom:20px}
+label{display:block;font-size:15px;font-weight:500;color:var(--leite);margin-bottom:8px}
+input[type=text],input[type=tel]{
+  width:100%;min-height:54px;padding:0 16px;border-radius:8px;
+  border:1px solid rgba(225,164,154,.34);background:rgba(0,0,0,.22);
+  color:var(--leite);font-family:var(--corpo);font-size:17px}
+input::placeholder{color:#A08C94}
+.opcoes{display:grid;gap:10px}
+.opcao{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 14px;
+  border:1px solid rgba(225,164,154,.26);border-radius:8px;cursor:pointer;font-size:16px}
+.opcao input{accent-color:var(--ambar-luz);width:18px;height:18px}
+.opcao:has(input:checked){border-color:var(--ambar-luz);background:rgba(225,164,154,.18)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--bruma-noite);
+  line-height:1.5;margin:22px 0 24px}
+.consent input{accent-color:var(--ambar-luz);width:20px;height:20px;margin-top:2px;flex:0 0 auto}
+.consent a{color:var(--ambar-luz)}
+.erro{display:none;font-size:15px;color:#F0B4A8;margin:-8px 0 16px}
+.erro.on{display:block}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.sucesso{display:none;text-align:center;padding:22px 6px}
+.sucesso .marca{font-size:40px;line-height:1;margin-bottom:16px}
+.sucesso h3{font-size:29px;margin-bottom:12px;color:var(--leite)}
+.sucesso p{color:var(--bruma-noite);margin:0;font-size:17px}
+form.enviado .form-corpo{display:none}
+form.enviado .sucesso{display:block}
+
+footer{background:var(--noite);color:#9C8892;padding:0 0 48px;font-size:14px}
+footer .wrap{border-top:1px solid rgba(225,164,154,.20);padding-top:28px;
+  display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+footer a{color:#C9AEB4}
+
+/* ---------- entrada ---------- */
+.rev{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.rev.vis{opacity:1;transform:none}
+
+@media (min-width:900px){
+  .hero .wrap{grid-template-columns:1.15fr .85fr}
+  .caps{grid-template-columns:1fr 1fr;column-gap:40px}
+  .caps li:nth-last-child(2){border-bottom:1px solid rgba(55,41,55,.18)}
+  .autora-grid{grid-template-columns:300px 1fr}
+  .dentro-grid{grid-template-columns:1.2fr .8fr}
+  .dentro-grid .caps{grid-template-columns:1fr}
+  .dep-grid{grid-template-columns:1fr 1fr 1fr}
+  .form-grid{grid-template-columns:.9fr 1.1fr}
+  .opcoes{grid-template-columns:1fr 1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rev{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Guia para o primeiro ano · 10 capítulos</p>
+      <h1>
+        <span class="h-tit">Mãe não vem com manual.</span>
+        <span class="h-perg">Mas se viesse?</span>
+      </h1>
+      <p class="sub">Um guia para mulheres que estão aprendendo a ser mães enquanto aprendem a não se perder de si mesmas.</p>
+      <p class="apoio">Para você, mãe: você não precisa saber tudo.</p>
+      <a class="btn" href="#receber" data-cta="hero">Quero receber no WhatsApp</a>
+      <p class="btn-nota">Gratuito. Chega em alguns minutos.</p>
+    </div>
+    <div class="capa-area">
+      <img class="capa" src="/capa-mae-nao-vem-com-manual.webp" width="760" height="1216"
+           onerror="this.onerror=null;this.src='/placeholder-capa.svg'"
+           alt="Capa do e-book Mãe não vem com manual, mas se viesse?, de Juliana Martins" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<!-- ============ DOR ============ -->
+<section class="s-dor">
+  <div class="wrap">
+    <h2 class="rev">Você não está fazendo nada de errado.</h2>
+    <ul class="horas">
+      <li class="rev"><time datetime="02:47">02:47</time><p>Você conta os minutos entre uma mamada e outra e não sabe dizer se isso é normal.</p></li>
+      <li class="rev"><time datetime="03:14">03:14</time><p>Você procura no Google e sai mais assustada do que entrou.</p></li>
+      <li class="rev"><time datetime="04:30">04:30</time><p>Todo mundo tem uma opinião sobre o que você deveria estar fazendo. Menos você.</p></li>
+    </ul>
+    <p class="dor-fecho rev">O problema quase nunca é falta de informação. É excesso de informação sem ninguém por perto para dizer <strong>o que é esperado e o que não é</strong>.</p>
+  </div>
+</section>
+
+<div class="aurora" aria-hidden="true"></div>
+
+<!-- ============ O QUE TEM DENTRO ============ -->
+<section id="dentro">
+  <div class="wrap dentro-grid">
+   <div>
+    <p class="eyebrow" style="color:var(--salvia)">O que tem dentro</p>
+    <h2 class="narrow rev">Oito capítulos curtos, para ler em pedaços.</h2>
+    <p class="nota rev">Cada capítulo cabe em duas páginas e segue sempre o mesmo caminho: o que te contaram, o que costuma acontecer, e o que dá para fazer hoje.</p>
+    <ul class="caps">
+      <li class="rev"><span class="n">01</span><span class="t">As primeiras 72 horas</span></li>
+      <li class="rev"><span class="n">02</span><span class="t">Seu corpo depois</span></li>
+      <li class="rev"><span class="n">03</span><span class="t">Amamentação sem tribunal</span></li>
+      <li class="rev"><span class="n">04</span><span class="t">Sono: o que esperam de você e o que a fisiologia diz</span></li>
+      <li class="rev"><span class="n">05</span><span class="t">O choro e o que ele comunica</span></li>
+      <li class="rev"><span class="n">06</span><span class="t">A cabeça da mãe</span></li>
+      <li class="rev"><span class="n">07</span><span class="t">Rede de apoio: como pedir e como aceitar</span></li>
+      <li class="rev"><span class="n">08</span><span class="t">O que é urgência e o que não é</span></li>
+    </ul>
+    <p class="nota rev">Mais a abertura e o capítulo de fechamento — dez ao todo. Material educativo: não substitui a avaliação do seu médico ou da sua equipe de saúde.</p>
+   </div>
+   <figure class="fig-perfil rev">
+     <img src="/juliana-perfil.webp" width="720" height="1080" loading="lazy"
+          onerror="this.onerror=null;this.src='/placeholder-retrato.svg'"
+          alt="Juliana Martins, autora do manual" >
+     <figcaption>Escrito por quem também já esteve às três da manhã</figcaption>
+   </figure>
+  </div>
+</section>
+
+<!-- ============ AUTORA ============ -->
+<section class="s-autora">
+  <div class="wrap autora-grid">
+    <img class="retrato" src="/juliana-retrato.webp" width="720" height="1080" loading="lazy"
+         onerror="this.onerror=null;this.src='/placeholder-retrato.svg'"
+         alt="Retrato de Juliana Martins">
+    <div class="autora-txt ph" data-ph="bio pendente — escrever com a juliana">
+      <p class="credencial">[Credencial · pendente de definição]</p>
+      <h2 class="rev">Quem escreveu</h2>
+      <p style="margin-top:18px">Eu sou a Juliana Martins. [Uma linha sobre quem ela é e o que faz.]</p>
+      <p>[Uma linha sobre por que ela escreveu este material — de preferência algo que ela viveu, não uma credencial.]</p>
+      <p>[Uma linha sobre o que ela não vai fazer: dizer o que é certo, comparar, cobrar.]</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section id="mães">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--salvia)">Quem já leu</p>
+    <h2 class="narrow rev">O que outras mães disseram</h2>
+    <div class="dep-grid ph" data-ph="depoimentos reais + autorização por escrito">
+      <blockquote class="dep"><p>[Depoimento real, curto, sem promessa de resultado.]</p><cite>[Nome], mãe do [nome], [cidade]</cite></blockquote>
+      <blockquote class="dep"><p>[Depoimento real, curto, sem promessa de resultado.]</p><cite>[Nome], mãe do [nome], [cidade]</cite></blockquote>
+      <blockquote class="dep"><p>[Depoimento real, curto, sem promessa de resultado.]</p><cite>[Nome], mãe do [nome], [cidade]</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="s-autora" id="perguntas">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--salvia)">Perguntas</p>
+    <h2 class="narrow rev">Antes de deixar seu contato</h2>
+    <div class="faq">
+      <details><summary>É gratuito mesmo?</summary><div class="resp">É. Você deixa nome e WhatsApp, recebe o link do manual e pronto. Não pedimos cartão em nenhum momento.</div></details>
+      <details><summary>Como eu recebo?</summary><div class="resp">Pelo WhatsApp, em alguns minutos, com um link para abrir e baixar no celular. Foi feito para ser lido na tela, com uma mão só.</div></details>
+      <details><summary>Vou receber propaganda toda hora?</summary><div class="resp">Não. São poucas mensagens ao longo de duas semanas, e elas param no momento em que você pedir.</div></details>
+      <details><summary>Serve para quem ainda está grávida?</summary><div class="resp">Serve. Boa parte do material é justamente sobre o que acontece nos primeiros dias — é mais fácil ler antes, com calma, do que depois, no meio do cansaço.</div></details>
+      <details><summary>E se eu quiser sair?</summary><div class="resp">Escreva <strong>sair</strong> em qualquer mensagem. As mensagens param na hora, sem que você precise explicar nada.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULÁRIO ============ -->
+<section class="s-form" id="receber">
+  <div class="wrap form-grid">
+    <div>
+      <h2 class="rev">Deixe seu WhatsApp e receba agora.</h2>
+      <p class="lede">Não é sobre ser perfeita. É sobre não se sentir perdida — e ter onde olhar às três da manhã.</p>
+    </div>
+
+    <form id="lead-form" novalidate>
+      <div class="form-corpo">
+        <div class="campo">
+          <label for="nome">Como você se chama?</label>
+          <input type="text" id="nome" name="nome" autocomplete="given-name" placeholder="Seu primeiro nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Seu WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" inputmode="numeric" autocomplete="tel-national" placeholder="(11) 90000-0000" required>
+        </div>
+
+        <div class="campo">
+          <label id="lbl-momento">Em que momento você está? <span style="color:var(--bruma-noite);font-weight:400">(opcional)</span></label>
+          <div class="opcoes" role="radiogroup" aria-labelledby="lbl-momento">
+            <label class="opcao"><input type="radio" name="segmento" value="GESTANTE"> Estou grávida</label>
+            <label class="opcao"><input type="radio" name="segmento" value="PUERPERA_0_3"> Bebê até 3 meses</label>
+            <label class="opcao"><input type="radio" name="segmento" value="MAE_3_12"> Bebê de 3 a 12 meses</label>
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+          <span>Autorizo o contato pelo WhatsApp e o uso dos meus dados conforme a <a href="/politica-de-privacidade">Política de Privacidade</a>.</span>
+        </label>
+
+        <p class="erro" id="erro" role="alert" aria-live="polite"></p>
+
+        <input class="hp" type="text" name="empresa" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button class="btn" type="submit" id="enviar" style="width:100%" data-cta="form">Quero receber o manual</button>
+        <p class="btn-nota" style="text-align:center">Seus dados não são vendidos nem compartilhados.</p>
+      </div>
+
+      <div class="sucesso" role="status">
+        <div class="marca" aria-hidden="true">✳</div>
+        <h3>Pronto.</h3>
+        <p>Te chamei no WhatsApp agora — dá uma olhada lá.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="ano"></span> Juliana Martins</span>
+    <span><a href="/politica-de-privacidade">Política de Privacidade</a></span>
+  </div>
+</footer>
+
+<script src="/config.js"></script>
+<script>
+(function(){
+  "use strict";
+  // ---- configuração ----
+  // Definida em /config.js (window.SITE_CONFIG.FUNNEL_API_URL).
+  // Vazio = modo demonstração: o lead NÃO é enviado a lugar nenhum.
+  var FUNNEL_API_URL = (window.SITE_CONFIG && window.SITE_CONFIG.FUNNEL_API_URL) || "";
+
+  var form = document.getElementById('lead-form');
+  var btn  = document.getElementById('enviar');
+  var erro = document.getElementById('erro');
+  var tel  = document.getElementById('telefone');
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  if(!FUNNEL_API_URL){
+    console.warn('[maternidadesemculpa] MODO DEMONSTRAÇÃO: FUNNEL_API_URL não configurada em /config.js — os leads não estão sendo salvos.');
+  }
+
+  // ---- UTMs ----
+  var CHAVES = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  var utms = {};
+  try{
+    var qs = new URLSearchParams(location.search), guardado = {};
+    try{ guardado = JSON.parse(sessionStorage.getItem('utm') || '{}'); }catch(e){}
+    CHAVES.forEach(function(k){ utms[k] = qs.get(k) || guardado[k] || null; });
+    try{ sessionStorage.setItem('utm', JSON.stringify(utms)); }catch(e){}
+  }catch(e){}
+
+  // ---- eventos ----
+  function evento(nome, dados){
+    try{ window.dataLayer = window.dataLayer || []; window.dataLayer.push(Object.assign({event:nome}, dados||{})); }catch(e){}
+  }
+  var iniciou = false;
+  form.addEventListener('focusin', function(){
+    if(!iniciou){ iniciou = true; evento('form_start'); }
+  });
+  document.querySelectorAll('[data-cta]').forEach(function(el){
+    el.addEventListener('click', function(){ evento('whatsapp_click', {origem: el.dataset.cta}); });
+  });
+
+  // ---- máscara de telefone ----
+  tel.addEventListener('input', function(){
+    var d = tel.value.replace(/\D/g,'').slice(0,11), out = '';
+    if(d.length) out = '(' + d.slice(0,2);
+    if(d.length >= 3) out += ') ' + d.slice(2,7);
+    if(d.length >= 8) out += '-' + d.slice(7,11);
+    tel.value = out;
+  });
+
+  function e164(v){
+    var d = v.replace(/\D/g,'');
+    return d.length === 11 ? '+55' + d : null;
+  }
+  function falhar(msg, campo){
+    erro.textContent = msg; erro.classList.add('on');
+    if(campo) campo.focus();
+  }
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    erro.classList.remove('on');
+
+    if(form.empresa.value) return; // honeypot
+
+    var nome = form.nome.value.trim();
+    if(nome.length < 2) return falhar('Escreve seu nome pra eu saber como te chamar.', form.nome);
+
+    var fone = e164(tel.value);
+    if(!fone) return falhar('Confere o número do WhatsApp — com DDD, 11 dígitos.', tel);
+
+    if(!document.getElementById('consent').checked)
+      return falhar('Preciso da sua autorização para te chamar no WhatsApp.', document.getElementById('consent'));
+
+    var seg = form.querySelector('input[name=segmento]:checked');
+    var payload = Object.assign({
+      nome: nome,
+      telefone: fone,
+      segmento: seg ? seg.value : null,
+      consent: true,
+      consent_texto: 'Autorizo o contato pelo WhatsApp e o uso dos meus dados conforme a Política de Privacidade.',
+      referrer: document.referrer || null,
+      landing_page: location.href
+    }, utms);
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    function sucesso(){
+      evento('lead', {segmento: payload.segmento});
+      form.classList.add('enviado');
+      form.querySelector('.sucesso').scrollIntoView({block:'center'});
+    }
+
+    if(!FUNNEL_API_URL){ console.info('[demo] lead capturado:', payload); return sucesso(); }
+
+    fetch(FUNNEL_API_URL.replace(/\/$/,'') + '/leads', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    })
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return sucesso(); })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Quero receber o manual';
+      falhar('Não consegui enviar. Confere o número do WhatsApp e tenta de novo.');
+    });
+  });
+
+  // ---- entrada suave ----
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); } });
+    }, {threshold:.12, rootMargin:'0px 0px -8%'});
+    document.querySelectorAll('.rev').forEach(function(el){ obs.observe(el); });
+  } else {
+    document.querySelectorAll('.rev').forEach(function(el){ el.classList.add('vis'); });
+  }
+})();
+</script>
+</body>
+</html>

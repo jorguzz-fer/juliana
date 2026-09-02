@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1216" width="760" height="1216" role="img" aria-label="Capa do e-book — imagem pendente">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4B3949"/>
+      <stop offset="55%" stop-color="#372937"/>
+      <stop offset="100%" stop-color="#251C25"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="18%" r="60%">
+      <stop offset="0%" stop-color="#E1A49A" stop-opacity=".30"/>
+      <stop offset="100%" stop-color="#E1A49A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="760" height="1216" fill="url(#g)"/>
+  <rect width="760" height="1216" fill="url(#glow)"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#F1E4DB">
+    <text x="60" y="150" font-size="76" letter-spacing="-1">MÃE NÃO VEM</text>
+    <text x="60" y="228" font-size="76" letter-spacing="-1">COM MANUAL</text>
+    <text x="60" y="304" font-size="52" font-style="italic" fill="#E1A49A">Mas se viesse?</text>
+  </g>
+
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#BBA8AE">
+    <text x="60" y="1010" font-size="26" letter-spacing="2">GUIA PARA O PRIMEIRO ANO</text>
+    <text x="60" y="1050" font-size="26" letter-spacing="2">10 CAPÍTULOS</text>
+  </g>
+
+  <text x="60" y="1150" font-family="Georgia, 'Times New Roman', serif" font-style="italic"
+        font-size="42" fill="#E1A49A">Juliana Martins</text>
+
+  <g>
+    <rect x="40" y="500" width="680" height="150" rx="10"
+          fill="rgba(146,51,60,.22)" stroke="#92333C" stroke-width="3" stroke-dasharray="12 8"/>
+    <text x="380" y="558" text-anchor="middle"
+          font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="24"
+          letter-spacing="2" fill="#E1A49A">IMAGEM PENDENTE</text>
+    <text x="380" y="600" text-anchor="middle"
+          font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="19" fill="#BBA8AE">
+      capa-mae-nao-vem-com-manual.webp
+    </text>
+  </g>
+</svg>

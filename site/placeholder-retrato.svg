@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1080" width="720" height="1080" role="img" aria-label="Retrato — imagem pendente">
+  <defs>
+    <linearGradient id="gr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EBDFE0"/>
+      <stop offset="100%" stop-color="#D9C9C9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="1080" fill="url(#gr)"/>
+
+  <!-- silhueta -->
+  <g fill="#372937" opacity=".16">
+    <circle cx="360" cy="420" r="122"/>
+    <path d="M360 566c-132 0-238 92-238 206v308h476V772c0-114-106-206-238-206z"/>
+  </g>
+
+  <g>
+    <rect x="90" y="856" width="540" height="126" rx="10"
+          fill="rgba(146,51,60,.12)" stroke="#92333C" stroke-width="3" stroke-dasharray="12 8"/>
+    <text x="360" y="906" text-anchor="middle"
+          font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="22"
+          letter-spacing="2" fill="#92333C">FOTO PENDENTE</text>
+    <text x="360" y="946" text-anchor="middle"
+          font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="18" fill="#6A5560">
+      juliana-perfil.webp / juliana-retrato.webp
+    </text>
+  </g>
+</svg>

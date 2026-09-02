@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Imagem de compartilhamento — pendente">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4B3949"/>
+      <stop offset="60%" stop-color="#372937"/>
+      <stop offset="100%" stop-color="#251C25"/>
+    </linearGradient>
+    <radialGradient id="ogglow" cx="82%" cy="14%" r="62%">
+      <stop offset="0%" stop-color="#E1A49A" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#E1A49A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <rect width="1200" height="630" fill="url(#ogglow)"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif">
+    <text x="80" y="200" font-size="72" fill="#F1E4DB" letter-spacing="-1">Mãe não vem com manual.</text>
+    <text x="80" y="296" font-size="82" font-style="italic" fill="#E1A49A" letter-spacing="-2">Mas se viesse?</text>
+    <text x="80" y="378" font-size="30" fill="#BBA8AE" font-family="Karla, system-ui, sans-serif">
+      Um guia para o primeiro ano, em 10 capítulos curtos.
+    </text>
+  </g>
+
+  <text x="80" y="560" font-family="Georgia, 'Times New Roman', serif" font-style="italic"
+        font-size="34" fill="#E1A49A">Juliana Martins</text>
+
+  <g>
+    <rect x="700" y="440" width="420" height="110" rx="10"
+          fill="rgba(146,51,60,.24)" stroke="#92333C" stroke-width="3" stroke-dasharray="12 8"/>
+    <text x="910" y="482" text-anchor="middle"
+          font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="19"
+          letter-spacing="2" fill="#E1A49A">IMAGEM PENDENTE</text>
+    <text x="910" y="516" text-anchor="middle"
+          font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="16" fill="#BBA8AE">juliana-og.webp</text>
+  </g>
+</svg>

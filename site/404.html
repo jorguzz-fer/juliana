@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página não encontrada | Maternidade Sem Culpa</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#372937">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--noite:#372937;--leite:#F1E4DB;--ambar-luz:#E1A49A;--bruma-noite:#BBA8AE;
+  --display:"Fraunces",Georgia,serif;--corpo:"Karla",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:40px 20px;
+  background:var(--noite);color:var(--leite);font-family:var(--corpo);font-size:18px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;text-align:center}
+.box{max-width:46ch}
+.num{font-family:var(--display);font-style:italic;font-weight:400;
+  font-size:clamp(64px,16vw,120px);line-height:1;color:var(--ambar-luz);margin:0 0 8px}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(26px,5vw,38px);
+  line-height:1.15;letter-spacing:-.02em;margin:0 0 16px}
+p{color:var(--bruma-noite);margin:0 0 32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;
+  border-radius:999px;background:var(--ambar-luz);color:var(--noite);
+  font-weight:600;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.30)}
+.btn:hover{transform:translateY(-2px)}
+:focus-visible{outline:3px solid var(--ambar-luz);outline-offset:3px;border-radius:2px}
+</style>
+</head>
+<body>
+  <div class="box">
+    <p class="num" aria-hidden="true">404</p>
+    <h1>Essa página não existe.</h1>
+    <p>Deve ter sido um link antigo ou um endereço digitado com um dedo só — o que, por aqui, a gente entende bem.</p>
+    <a class="btn" href="/">Ir para o manual</a>
+  </div>
+</body>
+</html>
