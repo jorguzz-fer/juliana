@@ -19,11 +19,11 @@ site/                      raiz pública
   404.html
   config.js                ⚠️ URL da API de leads — editar aqui
   robots.txt  sitemap.xml  favicon.svg
-  capa-mae-nao-vem-com-manual.webp   ⚠️ placeholder
-  juliana-perfil.webp                ⚠️ placeholder
-  juliana-retrato.webp               ⚠️ placeholder
-  juliana-og.webp                    ⚠️ placeholder (preview em links)
-  placeholder-*.svg        fallback caso um .webp suma
+  capa-mae-nao-vem-com-manual.webp   capa do e-book (topo da página)
+  juliana-perfil.webp                foto com as filhas (seção “O que tem dentro”)
+  juliana-retrato.webp               retrato (seção “Quem escreveu”)
+  juliana-og.webp                    preview ao compartilhar o link
+  placeholder-*.svg        fallback caso um .webp falhe ao carregar
 ```
 
 ---
@@ -73,7 +73,7 @@ segurança e a política de cache. O Dockerfile é o caminho recomendado.
 
 ---
 
-## Antes de mandar tráfego: 3 pendências
+## Antes de mandar tráfego: 2 pendências
 
 ### 1. `site/config.js` — os leads não estão sendo salvos
 
@@ -107,22 +107,7 @@ A API precisa responder `2xx` e liberar CORS para `https://maternidadesemculpa.c
 `config.js` é servido com `no-store`, então basta editar, commitar e
 redeployar — não é preciso mexer no `index.html`.
 
-### 2. Imagens
-
-Os quatro `.webp` em `site/` são **placeholders gerados**, não as fotos reais.
-Substitua mantendo exatamente os mesmos nomes e proporções:
-
-| Arquivo                            | Tamanho    | O que é                       |
-|------------------------------------|------------|-------------------------------|
-| `capa-mae-nao-vem-com-manual.webp` | 760×1216   | capa do e-book                |
-| `juliana-perfil.webp`              | 720×1080   | foto na seção “O que tem dentro” |
-| `juliana-retrato.webp`             | 720×1080   | retrato na seção “Quem escreveu” |
-| `juliana-og.webp`                  | 1200×630   | preview ao compartilhar o link |
-
-Cache das imagens é de 7 dias — a troca aparece rápido, mas peça um
-*hard refresh* se estiver vendo a versão antiga.
-
-### 3. Política de privacidade
+### 2. Política de privacidade
 
 `site/politica-de-privacidade.html`, seção 1, tem três campos em branco:
 nome/razão social do controlador, CPF/CNPJ e e-mail de privacidade. A LGPD
@@ -142,6 +127,25 @@ A pedido, a página foi publicada com os blocos de rascunho à mostra
 
 Para tirar uma dessas caixas do ar, remova a classe `ph` e o atributo
 `data-ph` do elemento correspondente em `site/index.html`.
+
+---
+
+## Imagens
+
+Os quatro `.webp` em `site/` são as fotos reais, já recortadas e comprimidas
+no tamanho em que a página as exibe. Para trocar alguma, mantenha o nome e a
+proporção:
+
+| Arquivo                            | Tamanho  | Onde aparece                              |
+|------------------------------------|----------|-------------------------------------------|
+| `capa-mae-nao-vem-com-manual.webp` | 760×1216 | capa do e-book, no topo                   |
+| `juliana-perfil.webp`              | 720×900  | foto com as filhas, em “O que tem dentro” |
+| `juliana-retrato.webp`             | 720×1080 | retrato, em “Quem escreveu”               |
+| `juliana-og.webp`                  | 1200×630 | preview ao compartilhar o link            |
+
+Cache das imagens é de 7 dias — a troca aparece rápido, mas peça um
+*hard refresh* se estiver vendo a versão antiga. Os `placeholder-*.svg`
+continuam no repositório só como fallback, caso um `.webp` falhe ao carregar.
 
 ---
 
