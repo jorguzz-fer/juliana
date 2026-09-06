@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mãe não vem com manual — mas se viesse? | Juliana Martins</title>
-<meta name="description" content="Um guia para mulheres que estão aprendendo a ser mães enquanto aprendem a não se perder de si mesmas. 10 capítulos curtos sobre o primeiro ano. Receba gratuitamente no WhatsApp.">
+<meta name="description" content="Um guia para mulheres que estão aprendendo a ser mães enquanto aprendem a não se perder de si mesmas. 10 capítulos curtos sobre o primeiro ano. Por R$ 19,90, com download na hora.">
 <link rel="canonical" href="https://maternidadesemculpa.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://maternidadesemculpa.com.br/">
 <meta property="og:site_name" content="Maternidade Sem Culpa">
 <meta property="og:title" content="Mãe não vem com manual — mas se viesse?">
-<meta property="og:description" content="Você não precisa saber tudo. Um guia para o primeiro ano, em 10 capítulos curtos.">
+<meta property="og:description" content="Você não precisa saber tudo. Um guia para o primeiro ano, em 10 capítulos curtos. R$ 19,90, com download na hora.">
 <meta property="og:image" content="https://maternidadesemculpa.com.br/juliana-og.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mãe não vem com manual — mas se viesse?">
-<meta name="twitter:description" content="Você não precisa saber tudo. Um guia para o primeiro ano, em 10 capítulos curtos.">
+<meta name="twitter:description" content="Você não precisa saber tudo. Um guia para o primeiro ano, em 10 capítulos curtos. R$ 19,90, com download na hora.">
 <meta name="twitter:image" content="https://maternidadesemculpa.com.br/juliana-og.webp">
 <meta name="theme-color" content="#372937">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -70,6 +70,7 @@ p{margin:0 0 18px}
   transition:transform .18s ease, box-shadow .18s ease;
   box-shadow:0 6px 24px rgba(55,41,55,.30);
 }
+.btn [data-preco]{display:contents}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(55,41,55,.42)}
 .btn:disabled{opacity:.6;cursor:progress;transform:none}
 .hero .btn,.s-form .btn{background:var(--ambar-luz);color:var(--noite)}
@@ -179,7 +180,7 @@ form{background:rgba(255,255,255,.045);border:1px solid rgba(225,164,154,.24);
   border-radius:14px;padding:clamp(24px,4vw,34px)}
 .campo{margin-bottom:20px}
 label{display:block;font-size:15px;font-weight:500;color:var(--leite);margin-bottom:8px}
-input[type=text],input[type=tel]{
+input[type=text],input[type=tel],input[type=email]{
   width:100%;min-height:54px;padding:0 16px;border-radius:8px;
   border:1px solid rgba(225,164,154,.34);background:rgba(0,0,0,.22);
   color:var(--leite);font-family:var(--corpo);font-size:17px}
@@ -190,18 +191,52 @@ input::placeholder{color:#A08C94}
 .opcao input{accent-color:var(--ambar-luz);width:18px;height:18px}
 .opcao:has(input:checked){border-color:var(--ambar-luz);background:rgba(225,164,154,.18)}
 .consent{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--bruma-noite);
-  line-height:1.5;margin:22px 0 24px}
+  line-height:1.5;margin:18px 0 0}
+.consent+.consent{margin-top:10px}
 .consent input{accent-color:var(--ambar-luz);width:20px;height:20px;margin-top:2px;flex:0 0 auto}
 .consent a{color:var(--ambar-luz)}
-.erro{display:none;font-size:15px;color:#F0B4A8;margin:-8px 0 16px}
+.erro{display:none;font-size:15px;color:#F0B4A8;margin:14px 0 0}
 .erro.on{display:block}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
-.sucesso{display:none;text-align:center;padding:22px 6px}
-.sucesso .marca{font-size:40px;line-height:1;margin-bottom:16px}
-.sucesso h3{font-size:29px;margin-bottom:12px;color:var(--leite)}
-.sucesso p{color:var(--bruma-noite);margin:0;font-size:17px}
-form.enviado .form-corpo{display:none}
-form.enviado .sucesso{display:block}
+
+/* ---------- checkout ---------- */
+.garantias{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:10px;color:var(--bruma-noite);font-size:16px;max-width:40ch}
+.garantias li{display:flex;gap:10px;align-items:flex-start}
+.garantias li::before{content:"✳";color:var(--ambar-luz);flex:0 0 auto}
+.preco{color:var(--ambar-luz);white-space:nowrap}
+.dica{color:var(--bruma-noite);font-weight:400;font-size:13px}
+.linha2{display:grid;gap:0 14px;grid-template-columns:1fr 1fr}
+.formas{display:grid;gap:10px;grid-template-columns:1fr 1fr 1fr}
+.formas .opcao{position:relative;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px;min-height:66px;line-height:1.3}
+.formas .opcao input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.formas .opcao small{color:var(--bruma-noite);font-size:13px}
+.formas .opcao:focus-within{outline:3px solid var(--ambar-luz);outline-offset:3px}
+.cartao-campos{border-top:1px solid rgba(225,164,154,.2);margin:4px 0 20px;padding-top:18px}
+.cartao-campos[hidden]{display:none}
+.aviso-config{background:rgba(225,164,154,.14);border:1px solid rgba(225,164,154,.4);border-radius:8px;padding:12px 14px;font-size:15px;color:var(--leite);margin:0 0 18px}
+.form-corpo .btn{margin-top:22px}
+.pg{padding:6px 2px}
+.pg h3{font-size:27px;color:var(--leite);margin:0 0 12px}
+.pg p{color:var(--bruma-noite);font-size:17px}
+.pg a{color:var(--ambar-luz)}
+.pg a.btn{width:100%;margin:8px 0 14px;color:var(--noite)}
+.pg-ok{text-align:center}
+.pg .marca{font-size:40px;line-height:1;margin-bottom:16px;color:var(--ambar-luz)}
+.qr{background:#fff;border-radius:10px;padding:12px;width:244px;margin:14px auto}
+.qr img{display:block;width:220px;height:220px}
+.copia{display:grid;gap:10px;grid-template-columns:1fr auto;margin:10px 0 16px}
+.copia input{min-height:48px;width:100%;font-family:var(--mono);font-size:13px;color:var(--leite);
+  background:rgba(0,0,0,.22);border:1px solid rgba(225,164,154,.34);border-radius:8px;padding:0 12px}
+.copiar{min-height:48px;padding:0 16px;border-radius:8px;border:1px solid var(--ambar-luz);background:transparent;
+  color:var(--ambar-luz);font-family:var(--corpo);font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+.pg .status{display:flex;gap:10px;align-items:center;color:var(--leite);font-size:16px}
+.spin{width:14px;height:14px;border:2px solid rgba(225,164,154,.35);border-top-color:var(--ambar-luz);border-radius:50%;
+  animation:gira .9s linear infinite;flex:0 0 auto}
+@keyframes gira{to{transform:rotate(360deg)}}
+.pg .mini{font-size:14px;word-break:break-word}
+@media (max-width:560px){
+  .formas,.linha2,.copia{grid-template-columns:1fr}
+}
 
 footer{background:var(--noite);color:#9C8892;padding:0 0 48px;font-size:14px}
 footer .wrap{border-top:1px solid rgba(225,164,154,.20);padding-top:28px;
@@ -227,6 +262,7 @@ footer a{color:#C9AEB4}
   html{scroll-behavior:auto}
   .rev{opacity:1;transform:none;transition:none}
   .btn{transition:none}
+  .spin{animation:none}
 }
 </style>
 </head>
@@ -243,8 +279,8 @@ footer a{color:#C9AEB4}
       </h1>
       <p class="sub">Um guia para mulheres que estão aprendendo a ser mães enquanto aprendem a não se perder de si mesmas.</p>
       <p class="apoio">Para você, mãe: você não precisa saber tudo.</p>
-      <a class="btn" href="#receber" data-cta="hero">Quero receber no WhatsApp</a>
-      <p class="btn-nota">Gratuito. Chega em alguns minutos.</p>
+      <a class="btn" href="#comprar" data-cta="hero">Quero o manual por <span data-preco>R$ 19,90</span></a>
+      <p class="btn-nota">Pix, cartão ou boleto. Download liberado assim que o pagamento cair.</p>
     </div>
     <div class="capa-area">
       <img class="capa" src="/capa-mae-nao-vem-com-manual.webp" width="760" height="1216"
@@ -332,37 +368,95 @@ footer a{color:#C9AEB4}
     <p class="eyebrow" style="color:var(--salvia)">Perguntas</p>
     <h2 class="narrow rev">Antes de deixar seu contato</h2>
     <div class="faq">
-      <details><summary>É gratuito mesmo?</summary><div class="resp">É. Você deixa nome e WhatsApp, recebe o link do manual e pronto. Não pedimos cartão em nenhum momento.</div></details>
-      <details><summary>Como eu recebo?</summary><div class="resp">Pelo WhatsApp, em alguns minutos, com um link para abrir e baixar no celular. Foi feito para ser lido na tela, com uma mão só.</div></details>
-      <details><summary>Vou receber propaganda toda hora?</summary><div class="resp">Não. São poucas mensagens ao longo de duas semanas, e elas param no momento em que você pedir.</div></details>
+      <details><summary>Quanto custa e como eu pago?</summary><div class="resp"><span data-preco>R$ 19,90</span>, pagamento único, sem assinatura. Pix, cartão de crédito ou boleto. O pagamento é processado pela Asaas, instituição de pagamento autorizada pelo Banco Central, e os dados do seu cartão não ficam guardados neste site.</div></details>
+      <details><summary>Como eu recebo o manual?</summary><div class="resp">No Pix e no cartão, o download libera na mesma tela, na hora. No boleto, libera assim que o banco confirmar, em até 2 dias úteis. Cada pedido tem uma página própria com o link do download — ela vai na descrição da cobrança e você pode abrir quantas vezes quiser.</div></details>
+      <details><summary>E se eu não gostar?</summary><div class="resp">Você tem 7 dias, contados do pagamento, para pedir o reembolso integral, como garante o Código de Defesa do Consumidor. É só responder a mensagem de confirmação do pedido.</div></details>
       <details><summary>Serve para quem ainda está grávida?</summary><div class="resp">Serve. Boa parte do material é justamente sobre o que acontece nos primeiros dias — é mais fácil ler antes, com calma, do que depois, no meio do cansaço.</div></details>
-      <details><summary>E se eu quiser sair?</summary><div class="resp">Escreva <strong>sair</strong> em qualquer mensagem. As mensagens param na hora, sem que você precise explicar nada.</div></details>
+      <details><summary>Vou receber mensagens depois?</summary><div class="resp">Só sobre o seu pedido, a não ser que você marque a opção de receber dicas pelo WhatsApp. Nesse caso chegam poucas mensagens ao longo de duas semanas, e elas param no momento em que você escrever <strong>sair</strong>.</div></details>
     </div>
   </div>
 </section>
 
-<!-- ============ FORMULÁRIO ============ -->
-<section class="s-form" id="receber">
+<!-- ============ CHECKOUT ============ -->
+<section class="s-form" id="comprar">
   <div class="wrap form-grid">
     <div>
-      <h2 class="rev">Deixe seu WhatsApp e receba agora.</h2>
-      <p class="lede">Não é sobre ser perfeita. É sobre não se sentir perdida — e ter onde olhar às três da manhã.</p>
+      <h2 class="rev">Leve o manual por <span class="preco" data-preco>R$ 19,90</span>.</h2>
+      <p class="lede">Pagamento único, sem assinatura. Pix e cartão liberam o download na mesma hora. Boleto, assim que o banco confirmar.</p>
+      <ul class="garantias">
+        <li>Pix, cartão de crédito ou boleto.</li>
+        <li>7 dias para pedir reembolso, sem precisar explicar.</li>
+        <li>Pagamento processado pela Asaas. Os dados do cartão não ficam guardados neste site.</li>
+      </ul>
     </div>
 
-    <form id="lead-form" novalidate>
+    <form id="checkout" novalidate>
       <div class="form-corpo">
+        <p class="aviso-config" id="aviso-config" hidden>O pagamento ainda está sendo configurado. Volte em instantes.</p>
+
         <div class="campo">
-          <label for="nome">Como você se chama?</label>
-          <input type="text" id="nome" name="nome" autocomplete="given-name" placeholder="Seu primeiro nome" required>
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Nome e sobrenome" required>
+        </div>
+
+        <div class="linha2">
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" inputmode="numeric" autocomplete="tel-national" placeholder="(11) 90000-0000" required>
+          </div>
         </div>
 
         <div class="campo">
-          <label for="telefone">Seu WhatsApp</label>
-          <input type="tel" id="telefone" name="telefone" inputmode="numeric" autocomplete="tel-national" placeholder="(11) 90000-0000" required>
+          <label for="cpf">CPF <span class="dica">(o sistema de pagamento exige)</span></label>
+          <input type="text" id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00" required>
         </div>
 
         <div class="campo">
-          <label id="lbl-momento">Em que momento você está? <span style="color:var(--bruma-noite);font-weight:400">(opcional)</span></label>
+          <label id="lbl-forma">Como você quer pagar?</label>
+          <div class="formas" role="radiogroup" aria-labelledby="lbl-forma">
+            <label class="opcao"><input type="radio" name="forma" value="PIX" checked><span>Pix</span><small>Libera na hora</small></label>
+            <label class="opcao"><input type="radio" name="forma" value="CREDIT_CARD"><span>Cartão de crédito</span><small>Libera na hora</small></label>
+            <label class="opcao"><input type="radio" name="forma" value="BOLETO"><span>Boleto</span><small>Até 2 dias úteis</small></label>
+          </div>
+        </div>
+
+        <div class="cartao-campos" hidden>
+          <div class="campo">
+            <label for="cartao_numero">Número do cartão</label>
+            <input type="text" id="cartao_numero" name="cartao_numero" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000">
+          </div>
+          <div class="campo">
+            <label for="cartao_nome">Nome impresso no cartão</label>
+            <input type="text" id="cartao_nome" name="cartao_nome" autocomplete="cc-name" placeholder="Como está no cartão">
+          </div>
+          <div class="linha2">
+            <div class="campo">
+              <label for="cartao_validade">Validade</label>
+              <input type="text" id="cartao_validade" name="cartao_validade" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/AA">
+            </div>
+            <div class="campo">
+              <label for="cartao_cvv">CVV</label>
+              <input type="text" id="cartao_cvv" name="cartao_cvv" inputmode="numeric" autocomplete="cc-csc" placeholder="123">
+            </div>
+          </div>
+          <div class="linha2">
+            <div class="campo">
+              <label for="cartao_cep">CEP da fatura</label>
+              <input type="text" id="cartao_cep" name="cartao_cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000">
+            </div>
+            <div class="campo">
+              <label for="cartao_endereco">Número do endereço</label>
+              <input type="text" id="cartao_endereco" name="cartao_endereco" placeholder="123">
+            </div>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label id="lbl-momento">Em que momento você está? <span class="dica">(opcional)</span></label>
           <div class="opcoes" role="radiogroup" aria-labelledby="lbl-momento">
             <label class="opcao"><input type="radio" name="segmento" value="GESTANTE"> Estou grávida</label>
             <label class="opcao"><input type="radio" name="segmento" value="PUERPERA_0_3"> Bebê até 3 meses</label>
@@ -371,23 +465,23 @@ footer a{color:#C9AEB4}
         </div>
 
         <label class="consent">
-          <input type="checkbox" id="consent" required>
-          <span>Autorizo o contato pelo WhatsApp e o uso dos meus dados conforme a <a href="/politica-de-privacidade">Política de Privacidade</a>.</span>
+          <input type="checkbox" id="consent_politica" name="consent_politica" required>
+          <span>Li e concordo com a <a href="/politica-de-privacidade">Política de Privacidade</a>.</span>
+        </label>
+        <label class="consent">
+          <input type="checkbox" id="consent_whatsapp" name="consent_whatsapp">
+          <span>Quero receber dicas e novidades da Juliana pelo WhatsApp. <span class="dica">(opcional)</span></span>
         </label>
 
         <p class="erro" id="erro" role="alert" aria-live="polite"></p>
 
         <input class="hp" type="text" name="empresa" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-        <button class="btn" type="submit" id="enviar" style="width:100%" data-cta="form">Quero receber o manual</button>
-        <p class="btn-nota" style="text-align:center">Seus dados não são vendidos nem compartilhados.</p>
+        <button class="btn" type="submit" id="pagar" style="width:100%" data-cta="form">Pagar com Pix R$ 19,90</button>
+        <p class="btn-nota" style="text-align:center">Ambiente seguro. Seus dados não são vendidos nem compartilhados para publicidade.</p>
       </div>
 
-      <div class="sucesso" role="status">
-        <div class="marca" aria-hidden="true">✳</div>
-        <h3>Pronto.</h3>
-        <p>Te chamei no WhatsApp agora — dá uma olhada lá.</p>
-      </div>
+      <div id="pagto" role="status" aria-live="polite" hidden></div>
     </form>
   </div>
 </section>
@@ -399,112 +493,15 @@ footer a{color:#C9AEB4}
   </div>
 </footer>
 
-<script src="/config.js"></script>
 <script>
 (function(){
   "use strict";
-  // ---- configuração ----
-  // Definida em /config.js (window.SITE_CONFIG.FUNNEL_API_URL).
-  // Vazio = modo demonstração: o lead NÃO é enviado a lugar nenhum.
-  var FUNNEL_API_URL = (window.SITE_CONFIG && window.SITE_CONFIG.FUNNEL_API_URL) || "";
-
-  var form = document.getElementById('lead-form');
-  var btn  = document.getElementById('enviar');
-  var erro = document.getElementById('erro');
-  var tel  = document.getElementById('telefone');
   document.getElementById('ano').textContent = new Date().getFullYear();
 
-  if(!FUNNEL_API_URL){
-    console.warn('[maternidadesemculpa] MODO DEMONSTRAÇÃO: FUNNEL_API_URL não configurada em /config.js — os leads não estão sendo salvos.');
-  }
-
-  // ---- UTMs ----
-  var CHAVES = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
-  var utms = {};
-  try{
-    var qs = new URLSearchParams(location.search), guardado = {};
-    try{ guardado = JSON.parse(sessionStorage.getItem('utm') || '{}'); }catch(e){}
-    CHAVES.forEach(function(k){ utms[k] = qs.get(k) || guardado[k] || null; });
-    try{ sessionStorage.setItem('utm', JSON.stringify(utms)); }catch(e){}
-  }catch(e){}
-
-  // ---- eventos ----
-  function evento(nome, dados){
-    try{ window.dataLayer = window.dataLayer || []; window.dataLayer.push(Object.assign({event:nome}, dados||{})); }catch(e){}
-  }
-  var iniciou = false;
-  form.addEventListener('focusin', function(){
-    if(!iniciou){ iniciou = true; evento('form_start'); }
-  });
+  // ---- cliques nos botões, para GTM/analytics (se instalar) ----
   document.querySelectorAll('[data-cta]').forEach(function(el){
-    el.addEventListener('click', function(){ evento('whatsapp_click', {origem: el.dataset.cta}); });
-  });
-
-  // ---- máscara de telefone ----
-  tel.addEventListener('input', function(){
-    var d = tel.value.replace(/\D/g,'').slice(0,11), out = '';
-    if(d.length) out = '(' + d.slice(0,2);
-    if(d.length >= 3) out += ') ' + d.slice(2,7);
-    if(d.length >= 8) out += '-' + d.slice(7,11);
-    tel.value = out;
-  });
-
-  function e164(v){
-    var d = v.replace(/\D/g,'');
-    return d.length === 11 ? '+55' + d : null;
-  }
-  function falhar(msg, campo){
-    erro.textContent = msg; erro.classList.add('on');
-    if(campo) campo.focus();
-  }
-
-  form.addEventListener('submit', function(ev){
-    ev.preventDefault();
-    erro.classList.remove('on');
-
-    if(form.empresa.value) return; // honeypot
-
-    var nome = form.nome.value.trim();
-    if(nome.length < 2) return falhar('Escreve seu nome pra eu saber como te chamar.', form.nome);
-
-    var fone = e164(tel.value);
-    if(!fone) return falhar('Confere o número do WhatsApp — com DDD, 11 dígitos.', tel);
-
-    if(!document.getElementById('consent').checked)
-      return falhar('Preciso da sua autorização para te chamar no WhatsApp.', document.getElementById('consent'));
-
-    var seg = form.querySelector('input[name=segmento]:checked');
-    var payload = Object.assign({
-      nome: nome,
-      telefone: fone,
-      segmento: seg ? seg.value : null,
-      consent: true,
-      consent_texto: 'Autorizo o contato pelo WhatsApp e o uso dos meus dados conforme a Política de Privacidade.',
-      referrer: document.referrer || null,
-      landing_page: location.href
-    }, utms);
-
-    btn.disabled = true;
-    btn.textContent = 'Enviando...';
-
-    function sucesso(){
-      evento('lead', {segmento: payload.segmento});
-      form.classList.add('enviado');
-      form.querySelector('.sucesso').scrollIntoView({block:'center'});
-    }
-
-    if(!FUNNEL_API_URL){ console.info('[demo] lead capturado:', payload); return sucesso(); }
-
-    fetch(FUNNEL_API_URL.replace(/\/$/,'') + '/leads', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify(payload)
-    })
-    .then(function(r){ if(!r.ok) throw new Error(r.status); return sucesso(); })
-    .catch(function(){
-      btn.disabled = false;
-      btn.textContent = 'Quero receber o manual';
-      falhar('Não consegui enviar. Confere o número do WhatsApp e tenta de novo.');
+    el.addEventListener('click', function(){
+      try{ window.dataLayer = window.dataLayer || []; window.dataLayer.push({event:'cta_click', origem: el.dataset.cta}); }catch(e){}
     });
   });
 
@@ -519,5 +516,7 @@ footer a{color:#C9AEB4}
   }
 })();
 </script>
+<!-- Formulário de compra, Pix, boleto, cartão e página do pedido. -->
+<script src="/checkout.js"></script>
 </body>
 </html>

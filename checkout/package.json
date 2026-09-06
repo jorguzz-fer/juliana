@@ -1,0 +1,10 @@
+{
+  "name": "maternidadesemculpa-checkout",
+  "private": true,
+  "description": "API do checkout do e-book (Asaas: Pix, boleto e cartão). Sem dependências.",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "mock": "node dev/asaas-mock.js"
+  }
+}

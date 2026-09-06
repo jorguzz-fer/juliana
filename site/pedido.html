@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seu pedido | Maternidade Sem Culpa</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#372937">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#372937;--leite:#F1E4DB;--ambar:#92333C;--ambar-luz:#E1A49A;--bruma-noite:#BBA8AE;
+  --display:"Fraunces",Georgia,serif;--corpo:"Karla",system-ui,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--noite);color:var(--leite);
+  font-family:var(--corpo);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{width:min(560px,100% - 40px);margin-inline:auto;padding:clamp(36px,7vw,64px) 0 56px}
+.topo a{color:var(--ambar-luz);text-decoration:none;font-size:15px}
+.topo a:hover{text-decoration:underline}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(30px,6vw,44px);line-height:1.08;letter-spacing:-.02em;margin:18px 0 6px}
+.sub{color:var(--bruma-noite);margin:0 0 28px;font-size:16px}
+.caixa{background:rgba(255,255,255,.045);border:1px solid rgba(225,164,154,.24);border-radius:14px;padding:clamp(24px,4vw,34px)}
+:focus-visible{outline:3px solid var(--ambar-luz);outline-offset:3px;border-radius:2px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;border-radius:999px;
+  background:var(--ambar-luz);color:var(--noite);font-family:var(--corpo);font-size:18px;font-weight:600;
+  text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.3)}
+.pg h3{font-family:var(--display);font-weight:500;letter-spacing:-.015em;line-height:1.1;font-size:27px;margin:0 0 12px}
+.pg p{color:var(--bruma-noite);font-size:17px;margin:0 0 18px}
+.pg a{color:var(--ambar-luz)}
+.pg a.btn{width:100%;margin:8px 0 14px;color:var(--noite)}
+.pg-ok{text-align:center}
+.pg .marca{font-size:40px;line-height:1;margin-bottom:16px;color:var(--ambar-luz)}
+.qr{background:#fff;border-radius:10px;padding:12px;width:244px;margin:14px auto}
+.qr img{display:block;width:220px;height:220px}
+.copia{display:grid;gap:10px;grid-template-columns:1fr auto;margin:10px 0 16px}
+.copia input{min-height:48px;width:100%;font-family:var(--mono);font-size:13px;color:var(--leite);
+  background:rgba(0,0,0,.22);border:1px solid rgba(225,164,154,.34);border-radius:8px;padding:0 12px}
+.copiar{min-height:48px;padding:0 16px;border-radius:8px;border:1px solid var(--ambar-luz);background:transparent;
+  color:var(--ambar-luz);font-family:var(--corpo);font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+.status{display:flex;gap:10px;align-items:center;color:var(--leite);font-size:16px;margin:0}
+.spin{width:14px;height:14px;border:2px solid rgba(225,164,154,.35);border-top-color:var(--ambar-luz);border-radius:50%;
+  animation:gira .9s linear infinite;flex:0 0 auto}
+@keyframes gira{to{transform:rotate(360deg)}}
+.pg .mini{font-size:14px;word-break:break-word}
+footer{color:#9C8892;font-size:14px;margin-top:36px;line-height:1.6}
+footer a{color:#C9AEB4}
+@media (max-width:560px){ .copia{grid-template-columns:1fr} }
+@media (prefers-reduced-motion:reduce){ .spin{animation:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topo"><a href="/">← maternidadesemculpa.com.br</a></div>
+  <h1>Seu pedido</h1>
+  <p class="sub">E-book “Mãe não vem com manual — mas se viesse?”, de Juliana Martins.</p>
+
+  <div class="caixa" id="pedido" role="status" aria-live="polite">
+    <p class="status"><span class="spin" aria-hidden="true"></span>Carregando o pedido...</p>
+  </div>
+
+  <footer>
+    Dúvidas sobre o pedido ou o pagamento? Responda a mensagem de confirmação que você recebeu.
+    <a href="/politica-de-privacidade">Política de Privacidade</a>
+  </footer>
+</div>
+<script src="/checkout.js"></script>
+</body>
+</html>
