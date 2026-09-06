@@ -15,9 +15,9 @@ COPY checkout/server.js checkout/start.sh /app/
 # Falha o build se a config do nginx estiver inválida, em vez de subir um container quebrado.
 RUN chmod +x /app/start.sh && nginx -t
 
+# A API escuta em 127.0.0.1:3000 (CHECKOUT_HOST/CHECKOUT_PORT). O Coolify injeta
+# PORT=80 e HOST=0.0.0.0 no container, e esses dois a API ignora de propósito.
 ENV NODE_ENV=production \
-    HOST=127.0.0.1 \
-    PORT=3000 \
     DATA_DIR=/data
 
 EXPOSE 80

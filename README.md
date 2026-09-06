@@ -70,6 +70,7 @@ no banco nem escritos no log.
 | `EBOOK_FILENAME`      | não | Nome do arquivo que a compradora baixa. Padrão `mae-nao-vem-com-manual.pdf`. |
 | `FUNNEL_API_URL`      | não | URL base da API do funil de WhatsApp. Vazio = não envia nada. |
 | `DATA_DIR`            | não | Pasta dos dados (banco e PDF). Padrão `/data`. |
+| `CHECKOUT_PORT`       | não | Porta interna da API. Padrão `3000`, que é a que o nginx repassa. Não use `PORT`: o Coolify injeta `PORT=80` e `HOST=0.0.0.0` em todo container, e a API ignora esses dois de propósito. |
 
 `GET /api/health` mostra o que está configurado, sem expor segredos:
 `{"ok":true,"asaas":true,"ambiente":"production","webhook":true,"ebook":true}`.
