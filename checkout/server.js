@@ -27,9 +27,11 @@ const { DatabaseSync } = require('node:sqlite');
 // ---------- configuração ----------
 const env = (k, d) => (process.env[k] != null && process.env[k] !== '' ? process.env[k] : d);
 
+// Atenção: o Coolify injeta PORT=80 e HOST=0.0.0.0 em todo container. Por isso
+// a API usa CHECKOUT_PORT e CHECKOUT_HOST, e ignora PORT e HOST de propósito.
 const CFG = {
-  host: env('HOST', '127.0.0.1'),
-  port: Number(env('PORT', 3000)),
+  host: env('CHECKOUT_HOST', '127.0.0.1'),
+  port: Number(env('CHECKOUT_PORT', 3000)),
   dataDir: env('DATA_DIR', '/data'),
   publicUrl: env('PUBLIC_URL', 'https://maternidadesemculpa.com.br').replace(/\/$/, ''),
   precoCentavos: Number(env('PRECO_CENTAVOS', 1990)),
