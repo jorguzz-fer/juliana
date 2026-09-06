@@ -1,6 +1,6 @@
 .git
 .gitignore
-README.md
 node_modules
 *.md
-!README.md
+checkout/dev
+checkout/package.json
